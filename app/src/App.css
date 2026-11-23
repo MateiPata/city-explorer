@@ -17,6 +17,7 @@ h1 {
 
 .formular {
   display: flex;
+  align-items: flex-start;
   gap: 0.6rem;
   margin-bottom: 1.5rem;
 }
@@ -46,8 +47,6 @@ button {
   background: #f3f4f6;
 }
 
-/* ===== Laborator 3 ===== */
-
 .lista {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -61,26 +60,117 @@ button {
 }
 
 .card h3 {
-  margin: 0 0 0.3rem 0;
+  margin: 0 0 0.2rem 0;
 }
 
 .card .tara,
 .card .zile {
   margin: 0;
   color: #6b7280;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .card button {
-  margin-top: 0.8rem;
+  margin-top: 0.7rem;
   width: 100%;
 }
 
 .card.vizitat {
-  background: #dcfce7;
+  background: #f0fdf4;
   border-color: #86efac;
 }
 
 .card.vizitat button {
   background: #16a34a;
+}
+
+.camp {
+  flex: 1;
+  min-width: 0;
+}
+
+.camp input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cautare {
+  margin-bottom: 1.2rem;
+}
+
+.cautare input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #c3c7cf;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.stare {
+  padding: 0.85rem 1rem;
+  border-radius: 9px;
+  background: #eff6ff;
+  color: #1e40af;
+}
+
+.stare.eroare {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.formular input.invalid {
+  border-color: #dc2626;
+  background: #fef2f2;
+}
+
+.eroare-camp {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.8rem;
+  color: #dc2626;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.gol {
+  padding: 1.5rem 1rem;
+  border: 1px dashed #c3c7cf;
+  border-radius: 9px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.panou {
+  margin-bottom: 1.4rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #d8dbe0;
+  border-radius: 10px;
+}
+
+.panou h2 {
+  margin: 0 0 0.6rem 0;
+  font-size: 1.1rem;
+}
+
+.panou label {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.panou input {
+  width: 70px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #c3c7cf;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.panou ul {
+  margin: 0.7rem 0 0 0;
+  padding-left: 1.1rem;
+  color: #4b5563;
+  font-size: 0.95rem;
 }
